@@ -1,0 +1,19 @@
+			table, th, td {
+				border: 1px solid orange;
+				text-align:center;
+				margin:auto;
+			}
+
+			h1, h2, h3, h4 {
+				text-align:center;
+			}
+           
+            .gfont {
+            	font-family:'Open Sans',sans-serif;
+            }
+
+            body {
+            	font-size: 18px;
+            	color:white;
+            	background-color:black;
+            }

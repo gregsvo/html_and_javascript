@@ -1,0 +1,67 @@
+
+/*****************
+TEXT
+*****************/	
+
+h1, h2, h3, h4 {
+	text-align:center;
+}
+
+.gfont {
+	font-family:'Open Sans',sans-serif;
+}
+
+body {
+	font-size: 18px;
+	color:white;
+	background-color:black;
+}
+
+/*****************
+LINKS
+*****************/	
+
+a {
+	font-family:'Open Sans',sans-serif;
+	text-decoration: none;
+	font-weight: none;
+}
+
+a:link {
+	color:Green;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: purple;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: red;
+	color: orange;
+}
+
+a:active {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*****************
+TABLES
+*****************/			
+
+table, th, td {
+	border: 2px solid orange;
+	text-align:center;
+	margin:auto;
+	border-collapse: collapse;
+	padding: 5px 8px 5px 8px;
+}
+
+tbody {
+	font-style: italic;
+	background: #600;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+    
+        <head>
+            <title>Greg's Tex-Mex Bonanza</title>
+            <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+            <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+        </head>
+            <body>
+
+                <header>
+
+                    <style>
+                       form {
+
+                            text-align:left;
+                            padding-left:50px;
+                            padding-top:10px;
+                            padding-bottom:10px;
+                            background-color: #9B870C;
+                        }
+
+                        .req{
+
+                            font-weight: bold;
+                            color: red;
+                        }
+
+                    </style>
+                    
+                
+                        <h1>GREG'S TEX-MEX BONANZA</h1>
+                        
+                        <hr>
+
+                            <nav>
+                              <a href="home.html">Home</a>
+                              <a href="menu.html">Menu</a>
+                              <a href="Contactus.html">Contact Us</a>
+                            </nav>
+                
+                </header>
+                  
+                        <hr>
+ 
+                    <form action="restaurant.html" method="post">
+                       
+                        <p>
+                        	<label for="name" class="req">Name:</label>
+                                <input type="text" name="Name">
+                        <p>
+                        	<label for="email" class="req">Eamil:</label>
+                                <input type="text" name="Email:">
+                        <p>
+                        	<label for="phone" class="req">Phone:</label>
+                                <input type= "text" name="Phone">
+                            
+                        <p>
+                        	<label for="Reason For Inquiry:">Reason For Inquiry:</label>
+                                <select name="ReasonForInquiry">
+                                <option value="Catering">Catering</option>
+                                <option value="Private Party">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            
+                        <p> 
+                        	<label for="Additional Information:">Additional Information:</label>
+                                <textarea name="Additional Information"></textarea></p>
+
+                        <p>
+                        	<label for="Have You Ever Been To This Restaurant?">Have You Ever Been To This Restaurant?</label>
+                                <input type= "radio" name="BeenToRestaurant" value="NO"checked>No
+                                <input type= "radio" name="BeenToRestaurant" value="YES">Yes 
+
+                        <p>
+                        	<label for="Best Days To Contact You:">Best Days To Contact You:</label>
+                        	   <input type="checkbox" name="MON">M
+                        	   <input type="checkbox" name="TUE">T
+                        	   <input type="checkbox" name="WED">W
+                        	   <input type="checkbox" name="THU">Th
+                        	   <input type="checkbox" name="FRI">F
+                        
+                        <p>
+                            <input type="submit" value="Send Request"></p>
+                        
+                    </form>
+
+    			<footer>
+
+                        <hr>
+                        <p>123 Ecoli Street Cleveland, Oh 44444</p>
+                        <p>216-867-5309</p>
+                        
+                </footer>
+
+            </body>
+    </html>

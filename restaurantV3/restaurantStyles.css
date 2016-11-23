@@ -1,0 +1,57 @@
+/*****************
+Header
+*****************/
+
+header {
+	text-align:center;
+}
+
+/*****************
+Font Intigration
+*****************/
+
+h1 {
+	font-family: 'Fontdiner Swanky', cursive;
+}
+
+/*****************
+Navigation
+*****************/
+
+nav {
+	text-align:left;
+}
+
+a {
+	padding-left: 25px;
+}
+
+a:hover {
+	color:red;
+}
+
+a:visited {
+	text-decoration: none;
+	color: green;
+}
+
+a:active {
+	text-decoration: black;
+}
+
+/*****************
+Table/Menu
+*****************/
+td {
+	padding: 10px;
+}
+
+/*****************
+Footer
+*****************/
+
+footer {
+	font-weight:bold;
+	color:red;	
+	text-align:center;
+}

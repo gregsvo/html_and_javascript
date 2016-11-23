@@ -1,0 +1,42 @@
+/*****************
+Header
+*****************/
+
+header {
+	text-align:center;
+}
+
+/*****************
+Navigation
+*****************/
+
+nav {
+	text-align:left;
+}
+
+a {
+	padding-left: 25px;
+}
+
+a:hover {
+	color:red;
+}
+
+a:visited {
+	text-decoration: none;
+	color: green;
+}
+
+a:active {
+	text-decoration: black;
+}
+
+/*****************
+Footer
+*****************/
+
+footer {
+	font-weight:bold;
+	color:red;	
+	text-align:center;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+            <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+            <link class="cssdeck" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.min.css">
+            <title>Greg's Tex-Mex Bonanza</title>
+        </head>
+        
+            <body>
+
+                        <!--NOSCRIPT-->
+
+                        <noscript>
+                        <div class="noscript">
+                            <h1>For the FULL Bonanza experience, it is necessary to enable JavaScript.</h1>
+                            <a href="http://www.enable-javascript.com/" target="_blank"> <h2>Here are instructions how to enable JavaScript in your web browser.</h2></a> <a href="http://www.radiolovers.com/" target="_blank"> <h2>Or maybe this is more of your speed.</h2></a>
+                        </div>
+                        </noscript>
+
+                        <!--SCRIPT-->
+                        <script>
+
+                          function validateForm() {
+                         var nameVar = document.forms["contact_form"]["first_name"].value;
+                            if (nameVar == null || nameVar == "") {
+                           
+                                document.getElementById("namealert").innerHTML = "<b>NAME REQUIRED.</b>";
+                                }
+                              
+
+                        var emailVar = document.forms["contact_form"]["email"].value;
+                            if (emailVar == null || emailVar == "") {
+                            var phoneVar = document.forms["contact_form"]["phone"].value;
+                              if (phoneVar== null || phoneVar == ""){
+                              
+                                document.getElementById("emailalert").innerHTML = "<b>EMAIL OR PHONE REQUIRED.<b></font>";
+                                document.getElementById("phonealert").innerHTML = "<b>PHONE OR EMAIL REQUIRED.</b>";
+                                }
+                              }
+
+                        var reasonVar = document.getElementById("reason").value;
+                            if (reasonVar == "Other") {
+                            var commentVar = document.forms["contact_form"]["comment"].value;
+                              if (commentVar== null || commentVar == ""){
+                                
+                                
+                                document.getElementById("reasonalert").innerHTML = "<b>REASON FOR INQUIRY OR ADDITIONAL INFORMATION REQUIRED.</b>";
+                                document.getElementById("additionalinformationalert").innerHTML = "<b>ADDITIONAL INFORMATION OR REASON FOR INQUIRY REQUIRED.</b>";
+                                
+                                }
+                              }
+
+                        var bestdayvar = document.getElementById("bestday").checked;
+                        
+                              if(bestdayvar == ""){
+                                   
+                              
+                                document.getElementById("bestdayalert").innerHTML = "<b>BEST DAY TO CONTACT YOU IS REQUIRED.</b>";
+
+                                alert("You are missing information.")
+                                   return false;
+                              }
+                            
+
+
+                            else return true;
+                          }
+
+                        </script>
+
+            <header>
+                        <!--STYLES-->
+
+                    <style>
+                       
+                       form {
+                            text-align:left;
+                            padding-left:50px;
+                            padding-top:10px;
+                            padding-bottom:10px;
+                            background-color: #9B870C;
+                        }
+
+                        .req {
+                            font-weight: bold;
+                            color: red;
+                        }
+
+                        .header {
+                            color: #36A0FF;
+                            font-size: 27px;
+                            padding: 10px;
+                        }
+
+                        .bigicon {
+                            font-size: 35px;
+                            color: #36A0FF;
+                        }
+
+                    </style>
+                    
+                
+                        <h1>GREG'S TEX-MEX BONANZA</h1>
+                        
+
+                        <!--NAVBAR-->
+
+      <div class="navbar navbar-default navbar-fixed" role="navigation">
+          
+          <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+          </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                  <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+              </div>
+      </div>  
+                                        
+            </header>
+                       
+                        <!--CONTACT FORM-->
+
+        <div class="container">
+            
+            <form class="well form-horizontal" action=" " method="post" id="contact_form" onsubmit="validateForm()">
+
+                <fieldset>
+
+                        <!-- Form Name -->
+                     <legend>Contact Us Today!</legend>
+
+                        <!-- Text input-->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="first_name" placeholder="First and Last Name" class="form-control" type="text">
+                          </div>
+                          <div><p id="namealert"></p></div>
+                        </div>
+                      </div>
+
+                        <!-- Text input-->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                          </div>
+                          <div><p id="emailalert"></p></div>
+                        </div>
+                      </div>
+
+
+                        <!-- Text input-->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">Phone #</label>
+                        <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                          </div>
+                          <div><p id="phonealert"></p></div>
+                        </div>
+                      </div>
+
+                        <!-- Select Basic -->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">Reason for inquiry</label>
+                        <div class="col-md-4 selectContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="state" id="reason" class="form-control selectpicker">
+                              <option value ="Other">Other</option>
+                              <option>Private Party</option>
+                              <option>Feedback</option>
+                              <option>Catering</option>
+                            </select>
+                          </div>
+                          <div><p id="reasonalert"></p></div>
+                        </div>
+                      </div>
+
+                        <!-- radio checks -->
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">Have you ever been to this restaurant?</label>
+                        <div class="col-md-4">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="hosting" value="yes" /> Yes
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="hosting" value="no" /> No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                        <!-- multiple-choice checks -->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">What is the best day to contact you?</label>
+                        <div class="col-md-4">
+                            <div class="checkbox-inline">
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Mon</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Tue</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Wed</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Thu</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Fri</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Sat</label>
+                                <label class="checkbox-inline"><input type="checkbox" id="bestday" value="">Sun</label>
+                            </div>
+                            <div><p id="bestdayalert"></p></div>
+                        </div>
+                    </div>
+
+                        <!-- Text area -->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label">Additional Information</label>
+                        <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Say what you need to say!"></textarea>
+                          </div>
+                          <div><p id="additionalinformationalert"></p></div>
+                        </div>
+                      </div>
+                      
+
+                        <!-- Submit Button -->
+
+                      <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                          <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                      </div>
+
+
+                      </fieldset>
+                     </form>
+                </div>
+            </div>
+        </div>
+
+                        <!--FOOTER-->
+
+                    <div id="footer">
+                            <div class="container text-center">
+                                <p class="text-muted credit" style="color:#fff">Greg's Tex-Mex Bonanza</p>
+                                <p>123 Ecoli Street Cleveland, Oh 44444</p>
+                                <p>216-867-5309</p>
+                            </div>
+                    </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+
+
+        </body>
+    </html>

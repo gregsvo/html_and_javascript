@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<!-- CSS -->
+		<link href="lucky.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">	
+		<!-- JavaScript -->
+		<script type"text/javascript" src="lucky.js"></script> 
+	  	<title>Lucky Sevens!</title>
+	  	 	  <div class="gfont">
+
+	  	 <h1>Lucky Sevens!</h1>
+	  <h2>How many dollars are in your pocket?</h2>
+	        <center><div id= "gameinputs"> <input type="text" id="betid">
+	  <p><button id="playa" onclick="playLuckysevens();">Play!</button>
+	  </div></center></div>
+
+	</head>
+
+	<body onload="doLoadStuff();">
+	 
+	<div id="results">
+	 <table>
+	 	<caption>RESULTS:</caption>
+	 	<tr id="toprow">
+	 		<td>Starting Bet:</td>
+	 		<td id="betidf"></td>
+	 	</tr>
+	 	<tr>
+	 		<td> Total Rolls Before Going Broke:</td>
+	 		<td id="numOfrollsid"></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Highest Amount Won:</td>
+	 		<td id="maxMonid"></td>
+	 	</tr>
+	 	<tr>
+	 		<td>Roll Count At Highest Amount Won:</td>
+	 		<td id="rollsAtmaxid"></tr>
+	 	</tr>
+	 </table>
+	</div>
+
+	</body>
+	</html>

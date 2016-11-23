@@ -1,0 +1,30 @@
+table, th, td {
+	border: 1px solid orange;
+	text-align:center;
+	margin:auto;
+	padding: 10px;
+	}
+
+h1, h2, h3, h4 {
+	text-align:center;
+	}
+	
+#toprow {
+	font-weight: bold;
+	background-color: grey;
+	}
+
+.gfont {
+	font-family:'Open Sans',sans-serif;
+	}
+
+caption {
+	text-align: center;
+	text-decoration: underline;
+	}
+
+button {
+	padding: 15px 50px 15px 50px;
+	background-color:lightgrey;
+	border:2px solid black;
+	}

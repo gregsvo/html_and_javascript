@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>This kind of elegance deserves an A+, no?</title>
+</head>
+    
+<body>
+        <!--Beginning of Document -->
+            <h1>Formatting Demo Page</h1>
+            This simple page demonstrates the formatting tags covered in this lesson.
+        
+        <!--Bold and Strong -->
+            <h2><strong>Bold and Strong</h2></strong>
+            <p><b>This is bold text.</b>
+            <p>The strong tag has the same visual effect as the bold tag but the strong tag also marks the enclosed text as more important.
+            <p><strong>This is what strong text looks like</strong>
+       
+        <!--Italic and Emphasis -->
+            <h2>Italic and Emphasis</h2>
+            <i>This text is in italics</i>
+            <p>The emphasis tag has the same visual effect as the italic tag but the emphasis tag also marks the enclosed text as more important.
+            <p><em>This is what emphasized text looks like.</em>
+        
+        <!--Subscript and Superscript -->
+            <h2>Subscript and Superscript</h2>
+            <p>Subscript text looks like this: <sub>This is subscript</sub>
+            <p>Superscript looks like this: <sup>This is superscript</sup>
+        
+        <!--Inserted and Deleted -->
+            <h2>Inserted and Deleted</h2>
+            Inserted text looks like this: <ins>This is inserted</ins>
+            <p>Deleted text looks like this: <del>This is deleted</del>
+        
+        <!--Marked -->
+            <h2>Marked</h2>
+            Marked text looks like this: <mark>This is marked.</mark>
+        
+        <!--Blockquote -->
+            <h2>Blockquote</h2>
+            Blockquoted text looks like this:
+            <blockquote>This is the blockquote</blockquote>
+        
+        <!--ComputerCode -->
+            <h2>Code</h2>
+            Computercode text looks like this: <code>This is code</code>
+        
+</body>
+</html>

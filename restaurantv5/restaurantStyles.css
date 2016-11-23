@@ -1,0 +1,79 @@
+/*****************
+Header
+*****************/
+
+header {
+	text-align:center;
+}
+
+/*****************
+Font Intigration
+*****************/
+
+h1 {
+	font-family: 'Fontdiner Swanky', cursive;
+}
+
+/*****************
+Navigation
+*****************/
+
+nav {
+	text-align:left;
+}
+
+a {
+	padding-left: 25px;
+}
+
+a:link {
+	color:orange;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color:purple;
+	font-weight:bold;
+}
+
+a:active {
+	text-decoration: black;
+	text-decoration: none;
+}
+
+/*****************
+Table/Menu
+*****************/
+td {
+	padding: 10px;
+}
+
+#name {
+	font-size:1.25em;
+	color:orange;
+
+}
+caption {
+	font-family: 'Fontdiner Swanky', cursive;
+	font-size:xx-large;
+	text-decoration: underline;
+	background: white;
+}
+
+#bev {
+	width:25%;
+
+}
+
+/*****************
+Footer
+*****************/
+
+footer {
+	font-weight:bold;
+	color:red;	
+	text-align:center;
+}
